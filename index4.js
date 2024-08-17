@@ -8,7 +8,10 @@ function getInput() {
   while (input >= 0) {
     let calculatedHash = crypto
       .createHash("sha256")
-      .update(input.toString())
+      .update(
+        `harkirat => Raman | Rs 100
+Ram => Ankit | Rs 10` + input.toString()
+      )
       .digest("hex");
     if (calculatedHash.startsWith(hash)) {
       return input;

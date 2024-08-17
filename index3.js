@@ -8,7 +8,7 @@ function getInput() {
   while (input >= 0) {
     let calculatedHash = crypto
       .createHash("sha256")
-      .update(input.toString())
+      .update("100xdevs" + input.toString())
       .digest("hex");
     if (calculatedHash.startsWith(hash)) {
       return input;
