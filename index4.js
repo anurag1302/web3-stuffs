@@ -9,7 +9,7 @@ function getInput() {
     let calculatedHash = crypto
       .createHash("sha256")
       .update(
-        `harkirat => Raman | Rs 100
+        `anurag => Rahul | Rs 100
 Ram => Ankit | Rs 10` + input.toString()
       )
       .digest("hex");
